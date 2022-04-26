@@ -133,11 +133,12 @@ class _FriendsPageState extends State<FriendsPage> {
           Navigator.push(context, route).then(onGoBackProfile);
         },
       ),
+      // body: listData(sendRequestList),
       body: isLoading
           ? Center(child: CircularProgressIndicator())
-          : ListView(
-              shrinkWrap: true,
-              physics: ScrollPhysics(),
+          : Column(
+              // shrinkWrap: true,
+              // physics: ScrollPhysics(),
               children: [
                 Padding(
                   padding: const EdgeInsets.all(20.0),
@@ -225,7 +226,7 @@ class _FriendsPageState extends State<FriendsPage> {
                   ),
                 ),
                 sendRequestList.length > 0
-                    ? listData(sendRequestList)
+                    ? Expanded(child: listData(sendRequestList)) //to make scrollable
                     : Center(
                         child: Text(
                           getTranslate(context, 'NO_FRIENDS'),

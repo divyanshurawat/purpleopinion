@@ -47,10 +47,22 @@ class _AddMailPageState extends State<AddMailPage> {
                       Divider(color: getWBColor(context)),
                       SizedBox(height: 10),
                       GestureDetector(
-                          onTap: () {
-                            pushAndRemoveUntilNavigator(context, LoginPage());
+                        onTap: () {
+                          pushAndRemoveUntilNavigator(context, LoginPage());
+                        },
+                        child: TextButton(
+                          style: ElevatedButton.styleFrom(
+                              primary: Colors.transparent),
+                          child: showYesNo(
+                            context,
+                            getTranslate(context, 'Log IN'),
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                            // print("ok");
                           },
-                          child: showYesNo(context, "LOGIN")),
+                        ),
+                      ),
                       SizedBox(height: 10),
                     ],
                   ),

@@ -4,7 +4,7 @@ class Constants {
   static const String appName = "Opinion";
   static const String opionRequest = "Opinion Request";
 
-  static const apiUrl = "http://3.142.90.164:3000";
+  static const apiUrl = "http://Purpleopinions.co.in:3000";
 
   static String mobileVerification = r'(^(?:[+0]9)?[0-9]{10,12}$)';
 

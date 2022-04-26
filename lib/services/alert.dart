@@ -17,11 +17,17 @@ showNormalAlert(context, title) {
             SizedBox(height: 20),
             Divider(color: getWBColor(context)),
             SizedBox(height: 10),
-            GestureDetector(
-                onTap: () {
-                  backNavigator(context);
-                },
-                child: showYesNo(context, getTranslate(context, 'OK'))),
+            TextButton(
+              style: ElevatedButton.styleFrom(primary: Colors.transparent),
+              child: showYesNo(
+                context,
+                getTranslate(context, 'OK'),
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+                print("ok");
+              },
+            ),
             SizedBox(height: 10),
           ],
         ),

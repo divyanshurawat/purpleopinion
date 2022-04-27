@@ -46,6 +46,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     setPushNotificationToken();
     getPost();
+
     _scrollController.addListener(() {
       setState(() {
         showCard=false;

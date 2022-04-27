@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "81480341578",
-    "project_id": "purpleopinion-8245b",
-    "storage_bucket": "purpleopinion-8245b.appspot.com"
+    "project_number": "685847078010",
+    "project_id": "opinonapp",
+    "storage_bucket": "opinonapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:81480341578:android:83c2896d84bd3fffb5eeb3",
+        "mobilesdk_app_id": "1:685847078010:android:c9f8a4886e953a252807c3",
         "android_client_info": {
           "package_name": "com.gingerapps.opinionapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "81480341578-6rfsj7fg5be1pglss5mo6jp8k6duqia5.apps.googleusercontent.com",
+          "client_id": "685847078010-aqfka16tjhvhk263dm0ol2opsfs46ab7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAIteQt8yKfYGzm9RaludDBZqIQ-OBlDgY"
+          "current_key": "AIzaSyAPr4B24hrYEGngEWgz8HWje1yiZe0sqnY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "81480341578-6rfsj7fg5be1pglss5mo6jp8k6duqia5.apps.googleusercontent.com",
+              "client_id": "685847078010-aqfka16tjhvhk263dm0ol2opsfs46ab7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

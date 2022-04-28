@@ -12,12 +12,14 @@ import 'package:demo_app/widget/button.dart';
 import 'package:demo_app/widget/text.dart';
 import 'package:demo_app/widget/text_form_fields.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 import '../../login_methods.dart';
 import '../../model/login_model.dart';
 import '../../widget/log_utils.dart';
 import '../../widget/social_button.dart';
+
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -27,7 +29,6 @@ class _LoginPageState extends State<LoginPage> {
   bool isLoginLoading = false, isOpenPass = true;
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String? email, password;
-
 
   loginMethod() async {
     FocusScope.of(context).unfocus();
@@ -73,7 +74,6 @@ class _LoginPageState extends State<LoginPage> {
       });
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -123,24 +123,31 @@ class _LoginPageState extends State<LoginPage> {
                   }),
                 ],
               ),
-              SocialButton(
-                onPressed: () {
-                  initiateSocialLogin(context, "Google");
-                },
-                providerName: "////AssetPathName Google",
-                buttonColor: Colors.purple,
-                buttonTextColor: Colors.white,
-                height: 100,
-              ),
-              SocialButton(
-                onPressed: () {
-                  initiateSocialLogin(context, "Facebook");
-                },
-                providerName: "////AssetPathName FB ",
-                buttonColor: Colors.purple,
-                buttonTextColor: Colors.white,
-                height: 100,
-              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SocialButton(
+                    onPressed: () {
+                      initiateSocialLogin(context, "Google");
+                    },
+                    loginIcon:FontAwesomeIcons.google,
+                    providerName: 'lib/assets/googlelogin.png',
+                    buttonColor: Colors.white,
+                    buttonTextColor: Colors.white,
+                    height: 80,
+                  ),
+                  SocialButton(
+                    onPressed: () {
+                      initiateSocialLogin(context, "Facebook");
+                    },
+                    providerName: 'lib/assets/facebook.png',
+                    loginIcon: FontAwesomeIcons.facebook,
+                    buttonColor: Colors.white,
+                    buttonTextColor: Colors.white,
+                    height: 80,
+                  ),
+                ],
+              )
             ],
           ),
         ),

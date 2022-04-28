@@ -10,8 +10,8 @@ class Constants {
 
   static String emailVerification = r'^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+';
   static Color themeColor = Color(0xff103f53);
-
 }
+
 class KeyConstants {
   static const String googleDisplayName = "displayName";
   static const String googleEmail = "email";
@@ -26,7 +26,7 @@ class KeyConstants {
 class SizeConstants {
   static const double socialButtonSize = 50.0;
   static const double socialButtonTextSize = 16.0;
-  static const double socialButtonLogoSize = 25.0;
+  static const double socialButtonLogoSize = 50.0;
   static const double horizontalPadding20 = 20.0;
   static const double verticalPadding10 = 10.0;
   static const double circularRadius = 20.0;

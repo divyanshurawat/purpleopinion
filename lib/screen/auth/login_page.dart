@@ -130,7 +130,7 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () {
                       initiateSocialLogin(context, "Google");
                     },
-                    loginIcon:FontAwesomeIcons.google,
+                    loginIcon: FontAwesomeIcons.google,
                     providerName: 'lib/assets/googlelogin.png',
                     buttonColor: Colors.white,
                     buttonTextColor: Colors.white,
